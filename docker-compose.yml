@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  test:
+    build: .
+    volumes:
+    - .:/pytest_project
+    stdin_open: true # stream from which a program reads its input data
+    tty: true # teletype writer, prints file name of terminal connected to stdin_input
